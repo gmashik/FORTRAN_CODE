@@ -1,0 +1,26 @@
+Working Directory `d:\ASHIKS~1\3RDYEA~1'
+C:\LF9045\BIN\lf90.exe "d:\ASHIKS PROGRAMMING WORLD\3rd year\Power.F90" -nwrap
+Lahey Fortran 90 Compiler Release 4.50f  S/N: F9366649Z
+Copyright (C) 1994-1998 Lahey Computer Systems.  All rights reserved.
+Copyright (C) 1985-1998 Intel Corp.  All rights reserved.
+Registered to:	ASHIK
+		University Of Dhaka
+Options:
+-nap           -nbind         -nc            -nchk          -co
+-ndal          -ndbl          -ndll          -nf90          -nfix
+-ng            -hed           -nin           -inln          -nlisk
+-nlst          -maxfatals 50  -nml           -o1            -no
+-out d:\ASHIKS PROGRAMMING WORLD\3rd year\Power.exe         -pca
+-sav           -stack 20000h  -nstaticlink   -stchk         -nswm
+-nsyn          -tp            -ntrace        -ntrap         -nvax
+-vm            -w             -nwin          -nwisk         -nwo
+-nwrap         -nxref
+
+Compiling file d:\ASHIKS PROGRAMMING WORLD\3rd year\Power.F90.
+Compiling program unit POWER_METHOD at line 2.
+Compiling program unit MATM at line 20.
+Encountered 0 errors, 0 warnings in file d:\ASHIKS PROGRAMMING WORLD\3rd year\Power.F90.
+
+386|LINK: 9.1fix1 -- Copyright (C) 1986-98 Phar Lap Software, Inc.
+
+DOS Task finished

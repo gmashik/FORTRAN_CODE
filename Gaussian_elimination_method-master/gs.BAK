@@ -1,0 +1,47 @@
+!     Last change:  A     1 May 2013    1:08 am
+PROGRAM Gauss_Sidel_method
+IMPLICIT NONE
+REal::a(100,100),x(0:100,100),sum1,b(100),tol,e(100),sum2,time
+INTEGER::i,j,k,p,n,c
+OPEN(1,"inq.dat")
+OPEN(2,"outq.dat")
+READ(1,*)n,k,tol
+READ(1,*)((a(i,j),j=1,n+1),i=1,n)
+READ(1,*)(x(0,i),i=1,n)
+WRITE(2,*)'The Augmented matrix is :'
+Do i=1,n
+WRITE(2,*)(a(i,j),j=1,n+1)
+END DO
+WRITE(2,*)''
+DO i=1,n
+b(i)=a(i,n+1)
+END DO
+c=0
+DO p=1,k
+DO i=1,n
+sum1=0.0
+DO j=1,i-1
+sum1=sum1+(a(i,j)*x(p,j))
+END DO
+sum2=0.0
+DO j=i+1,n
+sum2=sum2+(a(i,j)*x(p-1,j))
+END DO
+x(p,i)=(b(i)-sum1-sum2)/a(i,i)
+END DO
+DO i=1,n
+e(i)=ABS(x(p,i)-x(p-1,i))
+END DO
+c=c+1
+IF(MAXVAl(e).lt.tol) GO TO 10
+END DO
+10 WRITE(2,*)'The iterations are :'
+DO p=0,c
+WRITE(2,*)p,(x(p,j),j=1,n)
+END DO
+WRITE(2,*)'Hence The solution of the System by Gauss sidel method is'
+DO i=1,n
+WRITE(2,7)i,x(c,i)
+7 FORMAT (1X,'x(',I1,')=',F7.3)
+END DO
+END PROGRAM

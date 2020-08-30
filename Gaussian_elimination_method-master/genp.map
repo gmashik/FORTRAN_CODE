@@ -1,0 +1,380 @@
+386|LINK: 9.1fix1 -- Copyright (C) 1986-98 Phar Lap Software, Inc.
+
+
+Linking for 32-bit protected mode
+
+
+Command line switches:
+
+-LIBPATH C:\LF9045\Lib
+@C:\Users\Alter\AppData\Local\Temp\LFT5.
+"C:\LF9045\BIN\lfinit.obj"
+"C:\LF9045\BIN\ptest.obj"
+"d:\ASHIKS PROGRAMMING WORLD\3rd year\genp.obj"
+-lib lf90.lib
+-lib dosx.lib
+-stack 20000h
+-offset 8192
+-exeformat exp
+-exe "d:\ASHIKS PROGRAMMING WORLD\3rd year\genp.exe"
+-stub gotntvm
+-maxdata 0
+-minreal 0h
+-maxreal ffffh
+
+
+Input module(s):
+
+Stub "GOTNTVM" from file "C:\LF9045\Lib\dosx.lib"  [Fri Jun 13 14:08:10 1997].
+"lfinit" from file "C:\LF9045\BIN\lfinit.obj"  [Wed Apr 08 15:32:14 1998].
+"pentest" from file "C:\LF9045\BIN\ptest.obj"  [Sat Apr 25 13:18:30 1998].
+"genp" from file "d:\ASHIKS PROGRAMMING WORLD\3rd year\genp.obj"  [Tue Apr 30 20:20:06 2013].
+"fmtin" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"fmtin2" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"fmtot" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"fmtot2" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"minimum" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"open" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"memory" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"flg2rt" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"inter" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"chkstack" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"errpub" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"cifstub" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"extender" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"mw_asm0" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"afmtio" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"ereport" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"fcb" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"fmtio" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"iomisc" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"pause" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"dosio" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"lfsold" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"errno" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"lfctype" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"adirect" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"fmtnomod" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"location" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"lfgetenv" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+"cstring" from file "C:\LF9045\Lib\lf90.lib"  [Fri Oct 02 17:10:02 1998].
+
+
+Segment map
+
+     Name         Group         Class     Type   Offset     Size
+------------  ------------  ------------  ----  --------  --------
+??code        CGROUP        CODE          PUB   00002000  00001AE3
+_TEXT         CGROUP        CODE          PUB   00003AE4  0000AF04
+??lfusrtrm    CGROUP        CODE          PUB   0000E9E8  00000000
+??lfusrnit    CGROUP        CODE          PUB   0000E9E8  00000000
+??data        DGROUP        DATA          PUB   0000F000  000010DF
+_DATA         DGROUP        DATA          PUB   000100E0  00000DCA
+_lc__FLG2RT   DGROUP        DATA          COM   00010EB0  00000040
+_lc__rt_com-  DGROUP        DATA          COM   00010EF0  00000001
+CONST         DGROUP        CONST         PUB   00010EF4  000006FA
+??bss         DGROUP        BSS           PUB   000115F0  00000000
+_BSS          DGROUP        BSS           PUB   000115F0  00014C64
+_EBSS_        DGROUP        BSS           PUB   00026254  00000000
+c_common      DGROUP        BSS           PUB   00026260  00000000
+??stack       DGROUP        STACK         STK   00026260  00020000
+
+
+Public symbols
+
+     Name       Value      Module        Segment      Size
+------------  --------  ------------  ------------  --------
+$$GOTNTVM     00000001                              
+_ebss         00026254  lfinit        _EBSS_        
+_edata        000115F0                _BSS          
+_lc__FLG2RT   00010EB0  genp          _lc__FLG2RT   
+_lf_7_close   000085E8  minimum       _TEXT         
+_lf_7_open    0000E0D8  dosio         _TEXT         
+_lf_7_read    0000E27C  dosio         _TEXT         
+_lf_7_write   0000E300  dosio         _TEXT         
+_lf___close   0000E1CC  dosio         _TEXT         
+_lf__back1_-  0000D870  iomisc        _TEXT         
+_lf__create   0000E18C  dosio         _TEXT         
+_lf__drst     0000D968  iomisc        _TEXT         
+_lf__gpvc     0000D7D0  iomisc        _TEXT         
+_lf__lseek    0000E1F0  dosio         _TEXT         
+_lf__lsize    0000E234  dosio         _TEXT         
+_lf__prompt   00010C80  iomisc        _DATA         
+_lf__unlink   0000E348  dosio         _TEXT         
+_lf_a_fmt_o-  00006714  fmtot         _TEXT         
+_lf_absolut-  0000B6B4  ereport       _TEXT         
+_lf_alloc_b-  000087A0  minimum       _TEXT         
+_lf_alocfcb   0000BFFC  fcb           _TEXT         
+_lf_altreta   0000A7A5  errpub        _TEXT         
+_lf_ascii_t-  000053B4  fmtin2        _TEXT         
+_lf_ascii_t-  00004AF4  fmtin         _TEXT         
+_lf_assign_-  0000A898  errpub        _TEXT         
+_lf_brakdfl   000038BC  inter         ??code        
+_lf_braklog   00003890  inter         ??code        
+_lf_buffer_-  0001067C  flg2rt        _DATA         
+_lf_c_shutd-  0000A91C  cifstub       _TEXT         
+_lf_c_start-  0000A918  cifstub       _TEXT         
+_lf_calloc    0000A008  memory        _TEXT         
+_lf_char_fr-  00004BB0  fmtin         _TEXT         
+_lf_check_d-  0000E118  dosio         _TEXT         
+_lf_check_f-  0000C0F0  fcb           _TEXT         
+_lf_check_p-  0000CBC4  fmtio         _TEXT         
+_lf_check_s-  0000A6E0  chkstack      _TEXT         
+_lf_chopfil   0000E364  dosio         _TEXT         
+_lf_clear_i-  0000A75C  errpub        _TEXT         
+_lf_clenflag  0000D3B8  fmtio         _TEXT         
+_lf_cmp_name  0000D614  iomisc        _TEXT         
+_lf_codeend   0000F004  lfinit        ??data        
+_lf_codesta-  0000F000  lfinit        ??data        
+_lf_command-  0000F038  lfinit        ??data        
+_lf_command-  0000F034  lfinit        ??data        
+_lf_conflsh   000084F4  minimum       _TEXT         
+_lf_create_-  0000E050  dosio         _TEXT         
+_lf_crrnt_c-  00010B8F  fmtio         _DATA         
+_lf_ctype_    000114EC  lfctype       CONST         
+_lf_curfcb    00010470  minimum       _DATA         
+_lf_datasta-  0000F008  lfinit        ??data        
+_lf_dcode     00004B40  fmtin         _TEXT         
+_lf_default-  00010678  flg2rt        _DATA         
+_lf_deinsta-  00003344  inter         ??code        
+_lf_deinsta-  00003064  inter         ??code        
+_lf_deinsta-  000030B8  inter         ??code        
+_lf_deinsta-  000030F4  inter         ??code        
+_lf_deinsta-  00003130  inter         ??code        
+_lf_delfcb    00008488  minimum       _TEXT         
+_lf_delimitr  000062E8  fmtin2        _TEXT         
+_lf_determi-  0000C1E8  fmtio         _TEXT         
+_lf_display   0000DFDC  pause         _TEXT         
+_lf_doinc0a   0000A805  errpub        _TEXT         
+_lf_dpmi_fl-  0000F14C  lfinit        ??data        
+_lf_dpowuw    000083F8  fmtot2        _TEXT         
+_lf_ebp_of_-  00010460  minimum       _DATA         
+_lf_eip_of_-  0001045C  minimum       _DATA         
+_lf_emergen-  00002554  lfinit        ??code        
+_lf_emit_er-  0000B030  ereport       _TEXT         
+_lf_emit_me-  000024EC  lfinit        ??code        
+_lf_emit_me-  00002518  lfinit        ??code        
+_lf_end_inp-  0000CC04  fmtio         _TEXT         
+_lf_end_out-  0000CD80  fmtio         _TEXT         
+_lf_ensure_-  0000DD40  iomisc        _TEXT         
+_lf_env_len-  0000F144  lfinit        ??data        
+_lf_env_poi-  0000F148  lfinit        ??data        
+_lf_EOL_FF    00004AD4  fmtin         _TEXT         
+_lf_err_fcb   00010468  minimum       _DATA         
+_lf_err_pos-  00010464  minimum       _DATA         
+_lf_errno     00010CF8  errno         _DATA         
+_lf_error_e-  000109BC  ereport       _DATA         
+_lf_error_e-  000109C4  ereport       _DATA         
+_lf_error_e-  000109C0  ereport       _DATA         
+_lf_error_i-  0000A8FE  errpub        _TEXT         
+_lf_excepti-  0000B6C4  ereport       _TEXT         
+_lf_exitdos   000023B4  lfinit        ??code        
+_lf_extende-  0000A978  extender      _TEXT         
+_lf_extende-  0000A9B8  extender      _TEXT         
+_lf_extende-  0000A98C  extender      _TEXT         
+_lf_extende-  0000A9A0  extender      _TEXT         
+_lf_extende-  0000A9D0  extender      _TEXT         
+_lf_f90_con-  00010698  flg2rt        _DATA         
+_lf_fcb_list  0001046C  minimum       _DATA         
+_lf_file_of-  000109D0  ereport       _DATA         
+_lf_finish_-  0000253D  lfinit        ??code        
+_lf_flush_u-  0000DE8C  iomisc        _TEXT         
+_lf_fmalloc-  0000B7EC  ereport       _TEXT         
+_lf_fmt_ini-  0000C244  fmtio         _TEXT         
+_lf_fmt_lis-  0000C2AC  fmtio         _TEXT         
+_lf_fmtflag   00010B7C  fmtio         _DATA         
+_lf_fmtmod    0000E5C4  fmtnomod      _TEXT         
+_lf_fndname   0000BFA8  fcb           _TEXT         
+_lf_fndunit   0000843C  minimum       _TEXT         
+_lf_fpu_con-  0000F423  lfinit        ??data        
+_lf_free      0000A120  memory        _TEXT         
+_lf_get_byte  000088A8  minimum       _TEXT         
+_lf_get_cur-  0000C07C  fcb           _TEXT         
+_lf_get_env   0000E680  lfgetenv      _TEXT         
+_lf_get_env-  0000E6C8  lfgetenv      _TEXT         
+_lf_get_fmt-  0000D2B8  fmtio         _TEXT         
+_lf_get_n_d   0000E3B0  adirect       _TEXT         
+_lf_get_n_f-  0000AB44  afmtio        _TEXT         
+_lf_getenv    0000E5E0  lfgetenv      _TEXT         
+_lf_inchr     00006064  fmtin2        _TEXT         
+_lf_incmx16   00004D9C  fmtin2        _TEXT         
+_lf_incmx8    00004D74  fmtin2        _TEXT         
+_lf_indnf     00004754  fmtin         _TEXT         
+_lf_indnfa    000047E4  fmtin         _TEXT         
+_lf_inint1    00005F3C  fmtin2        _TEXT         
+_lf_inint2    00005F60  fmtin2        _TEXT         
+_lf_inint4    00005EF4  fmtin2        _TEXT         
+_lf_inint8    00005F18  fmtin2        _TEXT         
+_lf_init      00002020  lfinit        ??code        
+_lf_init_de-  00004998  fmtin         _TEXT         
+_lf_init_fcb  0000C084  fcb           _TEXT         
+_lf_init_in-  0000C10C  fmtio         _TEXT         
+_lf_initial-  00002000  lfinit        ??code        
+_lf_initial-  0000A580  memory        _TEXT         
+_lf_inlog1    00005FA8  fmtin2        _TEXT         
+_lf_inlog4    00005F84  fmtin2        _TEXT         
+_lf_input_f-  00010288  fmtin2        _DATA         
+_lf_input_r-  00010294  fmtin2        _DATA         
+_lf_inrel4    00005ED0  fmtin2        _TEXT         
+_lf_inrel8    00006348  fmtin2        _TEXT         
+_lf_install-  000032D4  inter         ??code        
+_lf_install-  0000316C  inter         ??code        
+_lf_install-  0000322C  inter         ??code        
+_lf_install-  00003280  inter         ??code        
+_lf_install-  000031D8  inter         ??code        
+_lf_intdos    0000AA24  mw_asm0       _TEXT         
+_lf_intrin_-  0000B848  ereport       _TEXT         
+_lf_intrin_-  0000A733  errpub        _TEXT         
+_lf_intzf     00004540  fmtin         _TEXT         
+_lf_intzfa    000046C0  fmtin         _TEXT         
+_lf_io_emit-  0000B680  ereport       _TEXT         
+_lf_ioerr     0000A710  errpub        _TEXT         
+_lf_iostat    00010458  minimum       _DATA         
+_lf_iostat_-  0000B5A4  ereport       _TEXT         
+_lf_isdigit   00004D4C  fmtin         _TEXT         
+_lf_itemsize  0000D40C  fmtio         _TEXT         
+_lf_line_of-  000109CC  ereport       _DATA         
+_lf_link_th-  00010694  flg2rt        _DATA         
+_lf_lsl_ds    00002468  lfinit        ??code        
+_lf_main      00003B40  genp          _TEXT         
+_lf_main_er-  0000E3AD  lfsold        _TEXT         
+_lf_malloc    00009FEC  memory        _TEXT         
+_lf_margin_-  0000668C  fmtot         _TEXT         
+_lf_max_pri-  00010398  fmtot2        _DATA         
+_lf_memchr    0000E8C4  cstring       _TEXT         
+_lf_memcmp    0000E830  cstring       _TEXT         
+_lf_memcmpr   0000D740  iomisc        _TEXT         
+_lf_memcopy   0000D7B0  iomisc        _TEXT         
+_lf_memicmp   0000E86C  cstring       _TEXT         
+_lf_memmem    0000E8E4  cstring       _TEXT         
+_lf_message-  000109C8  ereport       _DATA         
+_lf_nbrak     000038AC  inter         ??code        
+_lf_ncode     0000658C  fmtot         _TEXT         
+_lf_negdima   0000A835  errpub        _TEXT         
+_lf_next_bu-  00008918  minimum       _TEXT         
+_lf_next_wr-  000089D8  minimum       _TEXT         
+_lf_nl_flag   00010B8E  fmtio         _DATA         
+_lf_no_head-  00010674  flg2rt        _DATA         
+_lf_ntznumf   0000D400  fmtio         _TEXT         
+_lf_null_pr-  0000E3AF  lfsold        _TEXT         
+_lf_ontzf     0000636C  fmtot         _TEXT         
+_lf_ontzfa    00006524  fmtot         _TEXT         
+_lf_open      00008A30  open          _TEXT         
+_lf_osmajor   0000F150  lfinit        ??data        
+_lf_osminor   0000F151  lfinit        ??data        
+_lf_otchr     00006D98  fmtot2        _TEXT         
+_lf_otcmx16   00006B18  fmtot2        _TEXT         
+_lf_otcmx8    00006AB8  fmtot2        _TEXT         
+_lf_otdnf     000065FC  fmtot         _TEXT         
+_lf_otint1    000068E8  fmtot2        _TEXT         
+_lf_otint2    00006934  fmtot2        _TEXT         
+_lf_otint4    00006980  fmtot2        _TEXT         
+_lf_otint8    000069CC  fmtot2        _TEXT         
+_lf_otlog1    00006CA0  fmtot2        _TEXT         
+_lf_otlog4    00006CC4  fmtot2        _TEXT         
+_lf_otrel4    00006830  fmtot2        _TEXT         
+_lf_otrel8    0000688C  fmtot2        _TEXT         
+_lf_output_-  00010B78  fmtio         _DATA         
+_lf_output_-  00007F54  fmtot2        _TEXT         
+_lf_output_-  00010380  fmtot2        _DATA         
+_lf_page_lo-  00003000  inter         ??code        
+_lf_pause     0000DF44  pause         _TEXT         
+_lf_pause1    0000DF54  pause         _TEXT         
+_lf_penttest  00003AE4  pentest       _TEXT         
+_lf_pfill     0001039C  fmtot2        _DATA         
+_lf_program-  0000F02C  lfinit        ??data        
+_lf_ptr_asg-  0000A8CB  errpub        _TEXT         
+_lf_put_byte  00008938  minimum       _TEXT         
+_lf_put_fmt-  0000CF34  fmtio         _TEXT         
+_lf_put_n_d   0000E4B4  adirect       _TEXT         
+_lf_put_n_f-  0000ACC0  afmtio        _TEXT         
+_lf_q_fmt_i-  0000481C  fmtin         _TEXT         
+_lf_read_bu-  0000DC24  iomisc        _TEXT         
+_lf_realloc   0000A064  memory        _TEXT         
+_lf_recover-  00004920  fmtin         _TEXT         
+_lf_refbnda   0000A775  errpub        _TEXT         
+_lf_release-  0000C0A8  fcb           _TEXT         
+_lf_rep_cnt   0002502C  fmtin         _BSS          
+_lf_repeat_-  000102A8  fmtin2        _DATA         
+_lf_repeat_-  00010224  fmtin         _DATA         
+_lf_resize_-  00002470  lfinit        ??code        
+_lf_rt_io_e-  0000B6E4  ereport       _TEXT         
+_lf_rtp_fla-  00010000  inter         ??data        
+_lf_scan_di-  000049AC  fmtin         _TEXT         
+_lf_set_io_-  0000DEFC  iomisc        _TEXT         
+_lf_set_ios-  0000DED8  iomisc        _TEXT         
+_lf_set_loc-  0000E5D0  location      _TEXT         
+_lf_set_name  000087E8  minimum       _TEXT         
+_lf_set_rea-  0000D48C  iomisc        _TEXT         
+_lf_set_rec-  0000D90C  iomisc        _TEXT         
+_lf_set_wri-  0000D4E0  iomisc        _TEXT         
+_lf_setup_f-  0000A640  flg2rt        _TEXT         
+_lf_shape_e-  0000A865  errpub        _TEXT         
+_lf_show_pr-  0000E014  pause         _TEXT         
+_lf_skip_sp-  00004A88  fmtin         _TEXT         
+_lf_sold_ea-  0000E3A0  lfsold        _TEXT         
+_lf_sold_ND-  0000E3AE  lfsold        _TEXT         
+_lf_spindri-  00009F98  open          _TEXT         
+_lf_spindri-  00010CEC  dosio         _DATA         
+_lf_spindri-  00009E74  open          _TEXT         
+_lf_spindri-  00009FD4  open          _TEXT         
+_lf_stack_e-  0000B7F8  ereport       _TEXT         
+_lf_stack_f-  00002540  lfinit        ??code        
+_lf_stackbo-  0000F024  lfinit        ??data        
+_lf_stackli-  0000F020  lfinit        ??data        
+_lf_stackma-  0000F01C  lfinit        ??data        
+_lf_stacktop  0000F018  lfinit        ??data        
+_lf_status    0000F425  lfinit        ??data        
+_lf_stop      00008548  minimum       _TEXT         
+_lf_stop1     00008558  minimum       _TEXT         
+_lf_strcat    0000D660  iomisc        _TEXT         
+_lf_strchr    0000E810  cstring       _TEXT         
+_lf_strcmpr   0000D698  iomisc        _TEXT         
+_lf_strcopy   0000D76C  iomisc        _TEXT         
+_lf_strcpy    0000E7CC  cstring       _TEXT         
+_lf_strncpy   0000E7E4  cstring       _TEXT         
+_lf_strpbrk   0000E9BC  cstring       _TEXT         
+_lf_strstr    0000E974  cstring       _TEXT         
+_lf_subbnda   0000A7D5  errpub        _TEXT         
+_lf_tag_fcb   000084D4  minimum       _TEXT         
+_lf_toupper   00004D5C  fmtin         _TEXT         
+_lf_trace     0001069C  flg2rt        _DATA         
+_lf_trace_b-  0000BB9C  ereport       _TEXT         
+_lf_trap_ma-  0000F028  lfinit        ??data        
+_lf_truncate  0000D578  iomisc        _TEXT         
+_lf_unit_ch-  0000D5E8  iomisc        _TEXT         
+_lf_unused11  000106A0  flg2rt        _DATA         
+_lf_unused12  000106A4  flg2rt        _DATA         
+_lf_unused13  000106A8  flg2rt        _DATA         
+_lf_unused14  000106AC  flg2rt        _DATA         
+_lf_unused15  000106B0  flg2rt        _DATA         
+_lf_unused16  000106B4  flg2rt        _DATA         
+_lf_vect_le-  0000B818  ereport       _TEXT         
+_lf_write_b-  000086DC  minimum       _TEXT         
+_lfacos_err-  0000B704  ereport       _TEXT         
+_lfasin_err-  0000B710  ereport       _TEXT         
+_lfc_div_c_-  0000B7BC  ereport       _TEXT         
+_lfcabs_err-  0000B768  ereport       _TEXT         
+_lfccos_err-  0000B774  ereport       _TEXT         
+_lfcexp_err-  0000B780  ereport       _TEXT         
+_lfcheck_de-  00009D24  open          _TEXT         
+_lfclog_err-  0000B78C  ereport       _TEXT         
+_lfcosh_err-  0000B71C  ereport       _TEXT         
+_lfcsin_err-  0000B798  ereport       _TEXT         
+_lfcsqrt_er-  0000B7A4  ereport       _TEXT         
+_lfdz_div_e-  0000B7E0  ereport       _TEXT         
+_lfexp_error  0000B728  ereport       _TEXT         
+_lffltused    00010EF0  mw_asm0       _lc__rt_com-  
+_lflog10_er-  0000B738  ereport       _TEXT         
+_lflog_error  0000B744  ereport       _TEXT         
+_lfno_exp_e-  0000B734  ereport       _TEXT         
+_lfpower_er-  0000B7B0  ereport       _TEXT         
+_lfrc_div_e-  0000B7D4  ereport       _TEXT         
+_lfrep_char-  000102A0  fmtin2        _DATA         
+_lfsinh_err-  0000B750  ereport       _TEXT         
+_lfsqrt_err-  0000B75C  ereport       _TEXT         
+_lftrunc_     0000A9F0  mw_asm0       _TEXT         
+_lftruncu_    0000A9F0  mw_asm0       _TEXT         
+_lfz_div_z_-  0000B7C8  ereport       _TEXT         
+do_test       00003B08  pentest       _TEXT         
+env_var_len-  00025A50  lfgetenv      _BSS          
